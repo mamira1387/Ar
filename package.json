@@ -1,27 +1,53 @@
 {
-  "name": "rat_server",
+  "name": "telegram-game-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "16.13.2"
-  },
+  "description": "Professional Telegram Game Bot with Mini App - بات بازی حرفه‌ای تلگرام",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "test": "jest",
+    "lint": "eslint ."
   },
-  "keywords": [],
-  "author": "l",
+  "keywords": [
+    "telegram",
+    "bot",
+    "game",
+    "mini-app",
+    "slots",
+    "crash",
+    "arena",
+    "blockchain",
+    "ton",
+    "stars"
+  ],
+  "author": "mamira1387",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.1",
-    "express": "latest",
-    "multer": "^1.4.4",
-    "node-telegram-bot-api": "latest",
-    "uuid": "^8.3.2",
-    "ws": "latest",
-    "axios": "^0.26.1"
-  },
   "engines": {
-  "node": ">=18"
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "axios": "^1.6.0",
+    "node-telegram-bot-api": "^0.65.0",
+    "ws": "^8.14.0",
+    "mongodb": "^6.3.0",
+    "mongoose": "^7.7.0",
+    "dotenv": "^16.3.1",
+    "jwt-simple": "^0.5.6",
+    "bcryptjs": "^2.4.3",
+    "uuid": "^9.0.1",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "joi": "^17.11.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.52.0"
   }
 }
